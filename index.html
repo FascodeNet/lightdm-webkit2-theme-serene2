@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/greeter.js"></script>
+</head>
+<body>
+    <div id="firstScreen">
+        <div id="button">
+            <div id="shutdown" onclick="lightdm.shutdown()"><img src="img/system-shutdown-symbolic.svg"></div>
+            <div id="reboot" onclick="lightdm.restart()"><img src="img/system-restart-symbolic.svg"></div>
+            <div id="suspend" onclick="lightdm.suspend()"><img src="img/system-suspend-symbolic.svg"></div>
+        </div>
+        <p id="catchCopy">You will poineer.</p>
+        <p id="time">0000/00/00<br>◯曜日<br>00:00:00</p>
+        <p id="message">Enterキーまたはクリックでログイン画面に進むことができます。</p>
+    </div>
+    <div id="loginScreen">
+        <div id="user">
+            <div id="userLeft">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg> -->
+            </div>
+            <div id="userIcon">
+                <div><img src="img/icon.png" alt=""></div>
+            </div>
+            <div id="userRight">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg> -->
+            </div>
+        </div>
+        <div id="form">
+            <!-- <input type="text" value="ユーザーID"> -->
+            <select name="" id="id">
+            </select>
+            <input id="password" type="password" placeholder="Password">
+            <input id="submit" type="button" value="ログイン">
+        </div>
+    </div>
+    <div id="loadScreen">
+        <div class="windows8">
+            <div class="wBall" id="wBall_1">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_2">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_3">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_4">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_5">
+                <div class="wInnerBall"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
